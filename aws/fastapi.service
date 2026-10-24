@@ -1,0 +1,20 @@
+[Unit]
+Description=Forsaken CGPA Portal FastAPI REST API Daemon
+After=network.target
+
+[Service]
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/CGPA-GPA-portal
+Environment="PATH=/home/ubuntu/CGPA-GPA-portal/venv/bin"
+EnvironmentFile=/home/ubuntu/CGPA-GPA-portal/backend/.env
+ExecStart=/home/ubuntu/CGPA-GPA-portal/venv/bin/uvicorn backend.main:app --host 0.0.0.0 --port 8000 --workers 2
+
+Restart=always
+RestartSec=5
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=cgpa-fastapi
+
+[Install]
+WantedBy=multi-user.target

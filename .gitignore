@@ -1,0 +1,43 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Python & Virtual Environments
+venv/
+.venv/
+__pycache__/
+*.pyc
+backend/__pycache__/
+*.db
+
+# Archives & AWS Keys (Sensitive)
+*.pem
+*.tar.gz
+*.zip
+
+# Environment & Secret files
+.env
+backend/.env
+.env.production
+.env.local

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#0F172A"/>
+  <rect x="2" y="2" width="60" height="60" rx="14" stroke="url(#borderGlow)" stroke-width="2"/>
+  <path d="M32 14L52 24L32 34L12 24L32 14Z" fill="url(#capGrad)" stroke="#38BDF8" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M20 28.5V40C20 40 25 44 32 44C39 44 44 40 44 40V28.5" stroke="#818CF8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M46 27V38" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="46" cy="40" r="2.5" fill="#38BDF8"/>
+  <defs>
+    <linearGradient id="capGrad" x1="12" y1="14" x2="52" y2="34" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="borderGlow" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#818CF8"/>
+    </linearGradient>
+  </defs>
+</svg>
